@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Submission | Hopepitome</title>
+    <meta name="description"
+        content="Submit your resume for a professional makeover. Expert HR Services by Hopepitome.">
+    <meta name="keywords"
+        content="Resume Makeover, Portfolio Creation, LinkedIn Optimization, Hopepitome, Career Services, Resume Writing, ATS Resume, Freshers Resume, Experienced Resume">
+    <meta name="author" content="Hopepitome">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hopepitome.com/resume.html">
+    <meta property="og:title" content="Resume Submission | Hopepitome">
+    <meta property="og:description"
+        content="Submit your resume for a professional makeover. Expert HR Services by Hopepitome.">
+    <meta property="og:image" content="https://hopepitome.com/images/meta-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hopepitome.com/resume.html">
+    <meta property="twitter:title" content="Resume Submission | Hopepitome">
+    <meta property="twitter:description"
+        content="Submit your resume for a professional makeover. Expert HR Services by Hopepitome.">
+    <meta property="twitter:image" content="https://hopepitome.com/images/meta-image.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Specific adjustments for resume page */
+        body {
+            padding-top: var(--nav-height);
+            /* Ensure content isn't hidden behind fixed navbar since there is no Hero */
+        }
+
+        .section.resume-section {
+            padding-top: 50px;
+            min-height: calc(100vh - var(--nav-height) - 200px);
+            /* Adjust for footer */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" style="background: rgba(10, 14, 23, 0.95); box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+        <div class="container nav-container">
+            <a href="index.html" class="site-logo">
+                <div class="logo-main">HopEpitome.</div>
+                <div class="logo-sub">Strategics</div>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#hr-services" class="nav-link">HR Services</a></li>
+                <li class="nav-item"><a href="index.html#it-services" class="nav-link">IT Services</a></li>
+                <li class="nav-item"><a href="index.html#web-services" class="nav-link">Web Dev</a></li>
+                <li class="nav-item"><a href="resume.html" class="nav-link active"
+                        style="color: var(--primary-color);">Resume</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link nav-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Resume Submission Section -->
+    <section id="resume-submission" class="section resume-section">
+        <div class="container">
+            <div class="section-header text-center" data-animate="fade-up">
+                <span class="section-tag">Start Your Journey</span>
+                <h2>Resume & Portfolio Request</h2>
+                <p class="lead-text" style="font-size: 1.1rem; margin: 10px auto;">Fill in your details below to get a
+                    professional makeover.</p>
+            </div>
+
+            <div class="resume-form-wrapper glass-card" data-animate="fade-up">
+                <form id="resumeForm" class="resume-form">
+
+                    <!-- Client Information -->
+                    <h3 class="form-section-title">Client Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="e.g. +91 98765 43210" pattern="[0-9\+\-\s]+"
+                                title="Numeric characters only">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Location</label>
+                            <input type="text" name="location" placeholder="City, Country">
+                        </div>
+                    </div>
+
+                    <!-- Resume Requirements -->
+                    <h3 class="form-section-title">Resume Requirements</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Resume Type Requested *</label>
+                            <select name="resumeType" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Fresher Resume">Fresher Resume</option>
+                                <option value="Experienced Resume">Experienced Resume</option>
+                                <option value="ATS Optimized Resume">ATS Optimized Resume</option>
+                                <option value="Senior / Executive Resume">Senior / Executive Resume</option>
+                                <option value="LinkedIn Makeover">LinkedIn Makeover</option>
+                                <option value="Portfolio Creation">Portfolio Creation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Total Experience (Years)</label>
+                            <input type="text" name="experience" placeholder="e.g. 5 Years">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Job Title</label>
+                            <input type="text" name="currentJobTitle" placeholder="e.g. Software Engineer">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Company</label>
+                            <input type="text" name="currentCompany" placeholder="e.g. Tech Solutions">
+                        </div>
+                        <div class="form-group">
+                            <label>Target Role</label>
+                            <input type="text" name="targetRole" placeholder="e.g. Senior Developer">
+                        </div>
+                        <div class="form-group">
+                            <label>Industry / Domain</label>
+                            <input type="text" name="industry" placeholder="e.g. IT, Healthcare">
+                        </div>
+                    </div>
+
+                    <div class="form-full-width">
+                        <div class="form-group">
+                            <label>Key Skills</label>
+                            <textarea name="keySkills" rows="3" placeholder="List your top skills..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Career Highlights / Achievements</label>
+                            <textarea name="achievements" rows="3" placeholder="Major accomplishments..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Notes</label>
+                            <textarea name="notes" rows="3" placeholder="Any specific requirements..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- File Upload -->
+                    <h3 class="form-section-title">Upload Resume</h3>
+                    <div class="form-group file-upload-group">
+                        <div class="file-drop-area" id="dropArea">
+                            <span class="file-msg">Drag & Drop your file here or Click to Upload</span>
+                            <input type="file" class="file-input" name="file" id="resumeFile"
+                                accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
+                            <div class="file-name" id="fileNameDisplay"></div>
+                        </div>
+                        <small>Allowed: PDF, DOCX, JPG, PNG (Max 5MB)</small>
+                    </div>
+
+                    <!-- Submit & Message -->
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">Submit Request</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="site-logo footer-site-logo">
+                    <div class="logo-main">HopEpitome.</div>
+                    <div class="logo-sub">Strategics</div>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#hr-services">HR</a>
+                <a href="index.html#it-services">IT</a>
+                <a href="index.html#web-services">Web</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Hopepitome. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"00dd301e47504815b0f4928cb4be8782","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
